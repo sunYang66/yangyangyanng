@@ -1,0 +1,98 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import"ZCControl.h"
+#import"HttpRequestBlock.h"
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define JINGXUAN @"http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19928"
+//点出详情
+#define DETAIL @"http://api.fengniao.com/app_ipad/news_iphone_doc_v2.php?docid=4520317&isPad=2"
+
+////精选smallCell.
+//http://api.fengniao.com/app_ipad/news_jingxuan.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&page=1
+//
+//http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19928
+//
+////器材.
+//http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19929
+//
+//http://api.fengniao.com/app_ipad/news_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=296&page=1
+//
+////影像
+//http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19930
+//
+//http://api.fengniao.com/app_ipad/news_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=192&page=1
+//
+////学院.
+//http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19931
+//
+//http://api.fengniao.com/app_ipad/news_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=190&page=1
+//
+////旅游.
+//
+////http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19932
+//
+//http://api.fengniao.com/app_ipad/news_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=278&page=1
+//
+////汽车
+//
+//http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19933
+//
+//http://api.fengniao.com/app_ipad/news_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=305&page=1
+//
+////手机
+//http://api.fengniao.com/app_ipad//focus_pic.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&mid=19934
+//
+//http://api.fengniao.com/app_ipad/news_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=340&page=1
+//
+//
+//
+////人像
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=101&page=1
+//
+//
+////点击详情.http://api.fengniao.com/app_ipad/pic_bbs_detail.php?id=3284514&fid=27?appImei=99000505856649&osType=Android&osVersion=4.1.1
+//
+////风光
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=125&page=1
+//
+//
+/////生态
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=16&page=1
+//
+////数码
+////http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=24&page=1
+//
+////新手
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=27&page=1
+//
+////宠物
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=30&page=1
+//
+////生活
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=115&page=1
+//
+////建筑
+//http://api.fengniao.com/app_ipad/pic_bbs_list_v2.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&fid=165&page=1
+//
+//
+////大师作品
+//http://api.fengniao.com/app_ipad/pic_zutu_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=192&page=1
+//
+////器材赏析
+//http://api.fengniao.com/app_ipad/pic_zutu_list.php?appImei=99000505856649&osType=Android&osVersion=4.1.1&cid=296&page=1
+#endif
